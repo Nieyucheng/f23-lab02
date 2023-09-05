@@ -1,9 +1,8 @@
-function square(sideLen: number): Shape {
-    return {
-        sideLen,
-        computeArea: function (): number {
-            return sideLen * sideLen
-        }
+import { Rectangle } from "./rectangle"
+
+class square extends Rectangle {
+    constructor(sideLen: number) {
+        super(sideLen, sideLen)
     }
 }
 
